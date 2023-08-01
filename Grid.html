@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontawesome icons-->
+    <script src="https://kit.fontawesome.com/cf726b2618.js" crossorigin="anonymous"></script>
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- cdjns - fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <!-- Custom css-->
+   <link rel="stylesheet" href="grid.css">
+    <title>Grid</title>
+</head>
+<body class="black">
+    <h1 class="center">Grid</h1>
+    <div class="divider"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col s12 m12 l9">
+                    <p>We are using a standard 12 column fluid responsive grid system. 
+                        The grid helps you layout your page in an ordered, easy fashion.
+                    </p>
+                    <!-- Container -->
+                    <div id="grid-container" class="section">
+                        <h3>Container</h3>
+                            <p>The container class is not strictly part of the grid but is important in laying out content. 
+                                It allows you to center your page content. The container class is set to ~70% of the window width. 
+                                It helps you center and contain your page content. We use the container to contain our body content.
+                            </p>
+                        <div class="card-panel deep-orange darken-3">
+                            <p class="flow-text">Demo</p>
+                            <p>Try the button below to see what the page looks like without containers.</p>
+                            <button class="btn">Turn off container</button>
+                            <br><br>
+                            <img src="images/img 5.jpg" alt="" class="responsive-img">
+                            <br><br>
+                            <p>To add a container just put your content inside a <'div'> 
+                                tag with a <b>container</b> class. 
+                                Here's an example of how your page might be set up.
+                            </p>
+                        </div>
+                    </div> 
+                    <br>   
+                    <!--Introduction-->
+                    <div id="grid-intro" class="section">
+                        <h3>Introduction</h3>
+                            <!--12 columns-->
+                            <p>Take a look at this section to quickly understand how the grid works!</p>
+                        <div class="card-panel deep-orange darken-3">    
+                            <p class="flow-text">12 Columns</p>
+                            <p>Our standard grid has 12 columns. No matter the size of the browser, 
+                                each of these columns will always have an equal width.
+                            </p>
+                                <div class="row white-text">
+                                    <div class="col s12 m2 l1">
+                                        <div class="card-panel teal darken-3">
+                                            <i class="fa-solid fa-q"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m2 l1">
+                                        <div class="card-panel teal darken-3">
+                                            <i class="fa-solid fa-u"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m2 l1">
+                                        <div class="card-panel teal darken-3">
+                                            <i class="fa-solid fa-e"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m2 l1">
+                                        <div class="card-panel teal darken-3">
+                                            <i class="fa-solid fa-e"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m2 l1">
+                                        <div class="card-panel teal darken-3">
+                                            <i class="fa-solid fa-n"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m2 l1">
+                                        <div class="card-panel teal darken-3">
+                                            <i class="fa-solid fa-crown"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m2 l1">
+                                        <div class="card-panel teal darken-3">
+                                            <i class="fa-solid fa-z"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m2 l1">
+                                        <div class="card-panel teal darken-3">
+                                            <i class="fa-solid fa-a"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m2 l1">
+                                        <div class="card-panel teal darken-3">
+                                            <i class="fa-solid fa-i"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m2 l1">
+                                        <div class="card-panel teal darken-3">
+                                            <i class="fa-solid fa-r"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m2 l1">
+                                        <div class="card-panel teal darken-3">
+                                            <i class="fa-solid fa-a"></i>
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m2 l1">
+                                        <div class="card-panel teal darken-3">
+                                            <i class="fa-solid fa-h"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            <P>To get a feel of how the grid is used in HTML, 
+                                take a look at the code below which will produce 
+                                a similar result to the one above.
+                            </P>
+                            <p>Note: For now, just know that the s1 stands for small-1 
+                                which in plain English means "1 column on small screens".
+                            </p>
+                        </div>    
+                            <!-- Columns live inside Rows -->
+                        <div class="card-panel deep-orange darken-3">
+                            <p class="flow-text">Columns live inside Rows</p>
+                            <p>Remember when you are creating your layout that all columns 
+                                must be contained inside a row and that you must add the 
+                                <b>col</b> class to your inner divs to make them into columns
+                            </p>
+                                <div class="row white-text">
+                                    <div class="col s12">
+                                        <div class="card-panel teal darken-3">
+                                            This div is 12-columns wide on all screen sizes
+                                        </div>
+                                    </div>
+                                    <div class="col s6">
+                                        <div class="card-panel pink darken-4">
+                                            6-columns (one-half)
+                                        </div>
+                                    </div>
+                                    <div class="col s6">
+                                        <div class="card-panel pink accent-3">
+                                            6-columns (one-half)
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!--Offsets-->
+                    <div id="grid-offsets">
+                    <h3>Offsets</h3></div>
+                    <p>To offset, simply add offset-s2 to the class 
+                        where s signifies the screen class-prefix 
+                        (s = small, m = medium, l = large) and 
+                        the number after is the number of columns 
+                        you want to offset by.
+                    </p>
+                    <div class="card-panel deep-orange darken-3">
+                        <div class="row white-text">
+                            <div class="col s12">
+                                <div class="card-panel teal darken-3">
+                                    This div is 12-columns wide on all screen sizes
+                                </div>
+                            </div>
+                            <div class="col s6 offset-s1">
+                                <div class="card-panel pink darken-4">
+                                    6-columns (offset-by-1)
+                                </div>
+                            </div>
+                            <div class="col s6 offset-s2">
+                                <div class="card-panel pink darken-4">
+                                    6-columns (offset-by-2)
+                                </div>
+                            </div>
+                            <div class="col s6 offset-s3">
+                                <div class="card-panel pink darken-4">
+                                    6-columns (offset-by-3)
+                                </div>
+                            </div>
+                            <div class="col s6 offset-s4">
+                                <div class="card-panel pink darken-4">
+                                    6-columns (offset-by-4)
+                                </div>
+                            </div>
+                            <div class="col s6 offset-s5">
+                                <div class="card-panel pink darken-4">
+                                    6-columns (offset-by-5)
+                                </div>
+                            </div>
+                            <div class="col s6 offset-s6">
+                                <div class="card-panel pink darken-4">
+                                    6-columns (offset-by-6)
+                                </div>
+                            </div>
+                            <div class="col s12">
+                                <div class="card-panel teal darken-3">
+                                    This div is 12-columns wide on all screen sizes
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!--Push and Pull-->
+                    <div id="grid-push">
+                    <h3>Push and Pull</h3></div>
+                    <p>You can easily change the order of your columns with push and pull. 
+                        Simply add <b>push-s2 or pull-s2</b> to the class where 
+                        s signifies the screen class-prefix (s = small, m = medium, l = large) 
+                        and the number after is the number of columns you want to push or pull by.
+                    </p>
+                    <div class="card-panel deep-orange darken-3">
+                        <div class="row white-text">
+                            <div class="col s7">
+                                <div class="card-panel teal darken-3">
+                                    This div is 7-columns wide
+                                </div>
+                            </div>
+                            <div class="col s5">
+                                <div class="card-panel pink accent-3">
+                                    5-columns wide
+                                </div>
+                            </div>
+                            <div class="col s7 push-s5">
+                                <div class="card-panel teal darken-3">
+                                    This div is 7-columns wide on pushed to the right by 5-columns.
+                                </div>
+                            </div>
+                            <div class="col s5 pull-s7">
+                                <div class="card-panel pink accent-3">
+                                    5-columns wide pulled to the left by 7-columns.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <!--Creating Layouts-->
+                    <div id="grid-layouts">
+                    <h3>Creating Layouts</h3></div>
+                    <p>Here we will show you how to create some commonly used 
+                        layouts with our grid system. Hopefully these will get 
+                        you more comfortable with laying out elements. To keep 
+                        these demos simple, the ones here will not be responsive.
+                    </p>
+                        <!--Section & Divider-->
+                        <div class="section">
+                            <div class="row white-text">
+                                <div class="col s6">
+                                    <div class="card-panel deep-orange darken-3">
+                                        <p class="flow-text">Section</p>
+                                        <p>The section class is used for simple top and bottom 
+                                            padding. Just add the <b>section</b> class to your div's 
+                                            containing large blocks of content.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col s6">
+                                    <div class="card-panel deep-orange darken-3">
+                                        <p class="flow-text">Divider</p>
+                                        <div class="divider"></div>
+                                        <p>Dividers are 1 pixel lines that help break up your content.
+                                        Just add the <b>divider</b> to a div in between your content.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="card-panel deep-orange darken-3">
+                                <p class="flow-text">Example Sections and Dividers</p>
+                                <div class="divider"></div>
+                                <div class="section white-text">
+                                    <h5>Section 1</h5>
+                                    <p>Stuff</p>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="section white-text">
+                                    <h5>Section 2</h5>
+                                    <p>Stuff</p>
+                                </div>
+                                <div class="divider"></div>
+                                <div class="section white-text">
+                                    <h5>Section 3</h5>
+                                    <p>Stuff</p>
+                                </div>
+                            </div>
+                        <!--Promotion Table-->
+                        <div class="section">
+                            <div class="card-panel deep-orange darken-3">
+                                <p class="flow-text">
+                                    Example Promotion Table
+                                </p>
+                                <p>
+                                    If we want 3 divs that are equal size, 
+                                    we define the divs with a width of 4-columns, 
+                                    as 4+4+4 nicely adds up to 12. Inside those divs, 
+                                    we can put our content. Take our front page content 
+                                    for example. We've modified it slightly for the sake 
+                                    of this example.
+                                </p>
+                                    <div class="row">
+                                        <div class="col s4">
+                                            <div class="card-panel pink darken-4">
+                                                <div class="center promo promo-example">
+                                                    <i class="medium material-icons white-text">flash_on</i>
+                                                    <p class="flow-text">
+                                                        Speeds up development
+                                                    </p>
+                                                    <p>
+                                                        We did most of the heavy lifting for you to provide 
+                                                        a default stylings that incorporate our custom components.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s4">
+                                            <div class="card-panel teal darken-3">
+                                                <div class="center promo promo-example">
+                                                    <i class="medium material-icons white-text">people</i>
+                                                    <p class="flow-text">
+                                                        User Experience Focused
+                                                    </p>
+                                                    <p>
+                                                        By utilizing elements and principles of Material Design, 
+                                                        we were able to create a framework that focuses on User Experience.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col s4">
+                                            <div class="card-panel pink accent-4">
+                                                <div class="center promo promo-example">
+                                                    <i class="medium material-icons white-text">settings</i>
+                                                    <p class="flow-text">
+                                                        Easy to work with
+                                                    </p>
+                                                    <p>
+                                                        We have provided detailed documentation as well as specific 
+                                                        code examples to help new users get started.
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+                        <!--Side Navigation Layout-->
+                        <div class="section">
+                            <div class="card-panel deep-orange darken-3">
+                                <p class="flow-text">
+                                    Example Side Navigation Layout
+                                </p>
+                                <p>
+                                    You can see how easy it is to create layouts using the grid system. 
+                                    Just remember to make sure your column numbers add up to 12 for an even layout.
+                                </p>
+                                <img src="images/img6.jpg" alt="" class="responsive-img">
+                            </div>
+                        </div>
+                    <!--Creating Responsive Layouts-->
+                    <div id="grid-responsive">
+                    <h3>Creating Responsive Layouts</h3></div>
+                    <p>Above we showed you how to layout elements using our grid system. Now we'll show you how to design 
+                        your layouts so that they look great on all screen sizes.
+                    </p>
+                    <div class="section">
+                        <div class="card-panel deep-orange darken-3">
+                            <p class="flow-text">Screen Sizes</p>
+                            <div class="card-panel teal darken-3">
+                                <table class="highlight white-text">
+                                    <thead>
+                                        <tr>
+                                            <th></th>
+                                            <th>
+                                                Mobile Devices
+                                                <br>
+                                                <=600px
+                                            </th>
+                                            <th>
+                                                Tablet Devices
+                                                <br>
+                                                >600px
+                                            </th>
+                                            <th>
+                                                Desktop Devices
+                                                <br>
+                                                >992px
+                                            </th>
+                                            <th>
+                                                Large Desktop Devices
+                                                <br>
+                                                >1200px
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Class Prefix</td>
+                                            <td>.s</td>
+                                            <td>.m</td>
+                                            <td>.l</td>
+                                            <td>.xl</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Container Width</td>
+                                            <td>90%</td>
+                                            <td>85%</td>
+                                            <td>70%</td>
+                                            <td>70%</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Number of Columns</td>
+                                            <td>12</td>
+                                            <td>12</td>
+                                            <td>12</td>
+                                            <td>12</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Adding Responsiveness-->
+                    <div class="section">
+                        <div class="card-panel deep-orange darken-3">
+                            <p class="flow-text">Adding Responsiveness</p>
+                            <p>
+                                In the previous examples, we only defined the size for 
+                                small screens using "col s12".  This is fine if we want a 
+                                fixed layout since the rules propagate upwards.
+                                By just saying s12, we are essentially saying "col s12 m12 l12". 
+                                But by explicitly defining the size we can make our website more responsive.
+                            </p>
+                                <div class="row white-text">
+                                    <div class="grid-example col s12">
+                                        <div class="card-panel teal darken-3">
+                                            <span class="flow-text">I am always full-width (col s12)</span>
+                                        </div>
+                                    </div>
+                                    <div class="grid-example col s12 m6">
+                                        <div class="card-panel pink darken-4">
+                                            <span class="flow-text">I am full-width on mobile (col s12 m6)</span>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!--Responsive Side Navigation-->
+                    <div class="section">
+                        <div class="card-panel deep-orange darken-3">
+                            <p class="flow-text">Responsive Side Navigation Layout</p>
+                            <p>In this example below, we take the same layout from above, but we make it responsive 
+                                by defining how many columns the div should take up on each screen size. Try resizing 
+                                your browser and watch the layout change below.
+                            </p>
+                            <img src="images/img6.jpg" alt="" class="responsive-img">
+                        </div>
+                    </div>
+                    <!--More Responsive Grid Examples-->
+                    <div class="section">
+                        <div class="card-panel deep-orange darken-3">
+                            <p class="flow-text">More Responsive Grid Examples</p>
+                                <div class="row white-text">
+                                    <div class="col s12">
+                                        <div class="card-panel teal darken-3">
+                                            s12
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m4 l2">
+                                        <div class="card-panel pink darken-4">
+                                            s12 m4 l2
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m4 l8">
+                                        <div class="card-panel teal darken-3">
+                                            s12 m4 l8
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m4 l2">
+                                        <div class="card-panel pink accent-4">
+                                            s12 m4 l2
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m6 l3">
+                                        <div class="card-panel pink darken-4">
+                                            s12 m6 l3
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m6 l3">
+                                        <div class="card-panel pink darken-4">
+                                            s12 m6 l3
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m6 l3">
+                                        <div class="card-panel pink accent-4">
+                                            s12 m6 l3
+                                        </div>
+                                    </div>
+                                    <div class="col s12 m6 l3">
+                                        <div class="card-panel pink accent-4">
+                                            s12 m6 l3
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--Side Part-->  
+                <div class="col l3 hide-on-med-and-down">
+                    <img src="images/img7.jpg" alt="" class="responsive-img adobe-img">
+                        <a href="" class="adobe-link">
+                            Adobe Creative
+                        </a>
+                        <a href="" class="adobe-link">
+                            Cloud for Teams, Put
+                        </a>
+                        <a href="" class="adobe-link">
+                            creativity to work
+                        </a>
+                        <br>
+                        <a href="" class="adobe-link">
+                            ads via Carbon
+                        </a>
+                        <br><br><br>
+                        <blockquote>Alignment</blockquote>
+                        <a href="#grid-container" class="adobe-link">
+                            Container
+                        </a>
+                        <br>
+                        <a href="#grid-intro" class="adobe-link">
+                            Introductions
+                        </a>
+                        <br>
+                        <a href="#grid-offsets" class="adobe-link">
+                            Offsets
+                        </a>
+                        <br>
+                        <a href="#grid-push" class="adobe-link">
+                            Push and Pull
+                        </a>
+                        <br>
+                        <a href="#grid-layouts" class="adobe-link">
+                            Creating Layouts
+                        </a>
+                        <br>
+                        <a href="#grid-responsive" class="adobe-link">
+                            Responsive Layouts
+                        </a>
+                        <br>
+                    
+                </div>
+            </div>
+        </div>
+
+    <div style="height: 1000px"></div>
+
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>

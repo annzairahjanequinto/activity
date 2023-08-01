@@ -1,0 +1,27 @@
+h1,h2,h3 {
+    color: #ec407a;
+    font-weight: 500;
+}
+
+h3 {
+    color: #e0f2f1;
+    font-weight: bold;
+}
+
+p {
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+blockquote {
+    color: #ffffff;
+}
+
+.adobe-img {
+    padding: 30px 10px 5px 5px;
+}
+
+.adobe-link {
+    color: #ec407a;
+    font-weight: 200;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <title>Grid System</title>
+    <style>
+    .box{
+    background-color: #c2185b;
+    height: 50px;
+    padding-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    }
+
+    .box:nth-child(even) {
+    background-color: #64ffda;
+    }
+    </style>
+</head>
+
+<body class="red lighten-4 black-text text-black">
+    <div class="container">
+    <h1 class="center"><b>Grid Offset</b></h1>
+        <div class="divider pink darker-2 grey-text text-grey"></div>
+    <p class="flow-text" center>Offsets helps add more extra spaces on the sides of a column.</p>
+        <div class="divider pink darker-2 grey-text text-grey"></div>
+            <div class="section">
+                <div class="row">
+                    <div class="col box s8 offset-s2"></div>
+                    <div class="col box s6 offset-s3"></div>
+                    <div class="col box s4 offset-s4"></div>
+                    <div class="col box s2 offset-s5"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</body>
+</html>
