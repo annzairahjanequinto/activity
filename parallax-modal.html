@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Fontawesome icons-->
+    <script src="https://kit.fontawesome.com/cf726b2618.js" crossorigin="anonymous"></script>
+    <!--Material Icons-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- cdjns - fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserray:wght@100;500;600$family=Ubuntu:wght@300&display=swap" rel="stylesheet">
+    <!-- Custom css-->
+    <link rel="stylesheet" href="parallax.css">
+    <title>Parallax & Modals</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-wrapper transparent">
+            <div class="container">
+                <a href="" class="brand-logo small">
+                    Parallax
+                </a>
+                <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#location">
+                            <i class="fa-solid fa-location-dot fa-sm"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-facebook fa-sm"></i>
+                        </a>
+                    </li>
+                </ul>
+                <!--sidenav-->
+                <ul class="sidenav grey lighten-2" id="mobile-menu">
+                    <li>
+                        <a href="#home">Home</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#about">About Us</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact Us</a>
+                    </li>
+                    <li>
+                        <a href="#location">Location</a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-facebook fa-sm"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!--parallax-->
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="images/ocean.jpg" class="responsive-img" id="photo">
+        </div>
+    </div>
+    <!--Modals-->
+        <h2 class="center">Modals</h2>
+            <div class="row">
+                <div class="col s12 m4">
+                        <img src="images/drink.jpg" alt="">
+                        <a href="#button" class="btn orange modal-trigger">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                </div>
+                <div class="col s12 m4">
+                    <img src="images/drink1.jpg" alt="">
+                    <a href="#button" class="btn orange modal-trigger">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+            </div>
+            <div class="col s12 m4">
+                <img src="images/drink2.jpg" alt="">
+                <a href="#button" class="btn orange modal-trigger">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </a>
+        </div>
+            </div>
+            <div class="modal" id="button">
+                <div class="modal-content">
+                    <h4>Successfully Added</h4>
+                </div>
+                
+            </div>
+    
+
+    <div style="height: 1000px"></div>
+        
+
+    <!--jQuery CDN-->
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+       <!--Initialization-->
+       <script>
+        $(document).ready(function(){
+            //sidenav init
+           $('.sidenav').sidenav();
+           //parallax init
+           $('.parallax').parallax();
+           //slider init
+           $('.slider').slider();
+           //modal init
+           $('.modal').modal();
+        });
+        </script>   
+</body>
+</html>
